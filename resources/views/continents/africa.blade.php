@@ -12,7 +12,7 @@
                     <img src="{{ $destination->imgUrl }}" alt="" class="w-72">
                 </div>
 
-                <div class="inline-grid grid-cols-2 gap-2 gap-x-8 px-12">
+                <div class="inline-grid grid-cols-2 gap-2 gap-x-8 px-12g">
                     @foreach($destination->packages as $package)
                         <a href="{{ route('packages.show', $package->id) }}" class="inline w-64">Show {{ $package->start_date }}</a>
                     @endforeach
